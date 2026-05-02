@@ -177,11 +177,8 @@ export default function SoundControl({ settings, onUpdate }: SoundControlProps) 
           <div className="border-t border-[#1e3a1e] pt-4 space-y-3">
             <div className="flex items-center gap-2">
               <Moon className="w-4 h-4 text-blue-500" />
-              <span className="text-sm text-gray-400">Night Mode Detection</span>
+              <span className="text-sm text-gray-400"></span>
               <button
-                onClick={() => onUpdate({ night_mode_enabled: !settings?.night_mode_enabled })}
-                className={`ml-auto w-11 h-6 rounded-full transition-all relative ${
-                  settings?.night_mode_enabled ? 'bg-blue-700' : 'bg-[#1e3a1e]'
                 }`}
               >
                 <span className={`absolute top-1 w-4 h-4 bg-white rounded-full transition-all ${settings?.night_mode_enabled ? 'left-6' : 'left-1'}`} />
